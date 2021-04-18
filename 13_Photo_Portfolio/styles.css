@@ -8,3 +8,9 @@ body {
 .navbar-brand {
   text-transform: uppercase;
 }
+
+img {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
