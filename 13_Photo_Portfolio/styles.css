@@ -1,0 +1,10 @@
+body {
+  background-color: #14213d;
+  font-family: 'Nunito', sans-serif;
+  color: #fca311;
+}
+
+.navbar-nav,
+.navbar-brand {
+  text-transform: uppercase;
+}
