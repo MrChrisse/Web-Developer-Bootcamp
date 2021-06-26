@@ -1,0 +1,15 @@
+const express = require('express');
+const app = express();
+const path = require('path');
+
+app.set('view engine', 'ejs');
+//so you don't have to start nodemon in this folder
+app.set('views', path.join(__dirname, '/views'));
+
+app.get('/', (req, res) => {
+  res.render('home');
+});
+
+app.listen(3000, () => {
+  console.log('Listening on PORT 3000');
+});
