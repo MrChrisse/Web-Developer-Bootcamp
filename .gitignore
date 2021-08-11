@@ -1,1 +1,4 @@
 node_modules/
+*.lock
+/mongo_data/
+/mongo_data/db/*
