@@ -14,3 +14,5 @@ const Movie = mongoose.model('Movie', movieSchema);
 const amadeus = new Movie({ title: 'Amadeus', year: 1986, score: 9.2, rating: 'R' });
 
 amadeus.save().then(() => console.log('Inserted Movie'));
+
+Movie.find({ year: { $lt: 2010 } }).then((data) => console.log(data));
