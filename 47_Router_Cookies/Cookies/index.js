@@ -10,7 +10,7 @@ app.get('/greet', (req, res) => {
 app.get('/setname', (req, res) => {
   res.cookie('name', 'stevie chicks');
   res.send('Sent you a cookie');
-});
+}); 
 
 app.get('/getsignedcookie', (req, res) => {
   res.cookie('fruit', 'grape', { signed: true });
